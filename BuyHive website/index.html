@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>buyHive website</title>
+    <!-- Fontawsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary my-2">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/buyhive-logo.png" width="150px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+            <li class="nav-item px-2">
+              <a class="nav-link text-black" href="#">Expert Sourcing</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-black" href="#">Contract Manufacturing</a>
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link active fw-bold"
+                style="color: #6cd6ed !important"
+                href="#"
+                >Buy</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#">Financing</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a
+                class="nav-link dropdown-toggle text-black"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Our Story</a></li>
+                <li><a class="dropdown-item" href="#">How to buy</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button
+              class="btn btn-outline-primary text-primary mx-2 px-3 rounded-5"
+              type="submit"
+            >
+              Register
+            </button>
+            <button
+              class="btn btn-outline-success text-success px-3 rounded-5"
+              type="submit"
+            >
+              <i class="fa-regular fa-user pe-2"></i>
+              Sign In
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Search Box -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <div
+            class="searchBox d-flex justify-content-between align-items-center py-3 px-3 py-4 rounded-3"
+          >
+            <div class="d-flex">
+              <i class="fa-regular fa-grid-2"></i>
+              <h4>Categories</h4>
+            </div>
+            <div class="w-100 ms-4">
+              <input
+                type="search"
+                name=""
+                id=""
+                placeholder="What are you looking for?"
+                class="border-0 w-100 py-2 ps-4 pe-4 rounded-start-5 border border-1"
+                style="outline: none"
+              />
+            </div>
+            <span class="vr my-2"></span>
+            <div>
+              <select
+                style="
+                  background-color: #ffff !important;
+                  color: #d2d6e0 !important;
+                "
+                class="py-2 ps-2 me-2 pe-4 rounded-end-5"
+                id=""
+              >
+                <option class="text-black" value="volvo">All Categories</option>
+                <option class="text-black" value="saab">PPE</option>
+                <option class="text-black" value="opel">Medical Health</option>
+                <option class="text-black" value="audi">
+                  Garden and Outdoor
+                </option>
+                <option class="text-black" value="audi">
+                  Sports and Fitness
+                </option>
+                <option class="text-black" value="audi">Other</option>
+                <option class="text-black" value="audi">Baby</option>
+                <option class="text-black" value="audi">
+                  Beauty and Personal Care
+                </option>
+                <option class="text-black" value="audi">
+                  Home Kitchen and Office
+                </option>
+              </select>
+            </div>
+            <div>
+              <form class="d-flex" role="search">
+                <button
+                  style="background-color: #00b2c9 !important"
+                  class="btn btn-primary text-white mx-2 px-4 py-2 rounded-pill border-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Products -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-12">
+          <h5 class="text-dark-emphasis my-4">
+            Products
+            <span class="text-muted ps-3 fw-medium">(524 Products)</span>
+          </h5>
+          <div class="border border-1 border-dark-subtle mt-5 mb-3 py-5 px-4">
+            <!-- Price -->
+            <h5 class="text-dark-emphasis pb-3">Price</h5>
+            <div class="d-flex justify-content-center align-items-center">
+              <input
+                class="w-100 border border-2 py-2 px-2 rounded-5"
+                placeholder="0$"
+                type="text"
+                style="outline: none"
+              />
+              <hr class="ms-1 me-1" style="width: 13px" />
+              <input
+                class="w-100 border border-2 py-2 px-2 rounded-5"
+                placeholder="6900$"
+                type="text"
+                style="outline: none"
+              />
+            </div>
+            <!-- MOQ -->
+            <h5 class="text-dark-emphasis mt-4">MOQ</h5>
+            <div>
+              <input
+                class="w-100 border border-2 py-2 px-2 rounded-5"
+                placeholder="Less than"
+                type="text"
+                style="outline: none"
+              />
+            </div>
+            <!-- Price Certification -->
+            <h5 class="text-dark-emphasis mt-4">Product Certificate</h5>
+            <input
+              class="w-100 border border-2 py-2 px-2 rounded-5"
+              placeholder=" Product Certification..."
+              type="text"
+              style="outline: none"
+            />
+            <!-- Checkboxes -->
+            <div class="mt-4" style="height: 20vh; overflow-y: scroll">
+              <div class="d-flex align-items-center px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">ASTM</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">CE</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Certificate of Compliance</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Certificate of Conformity</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">EN</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">EPA</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">FCC</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">FDA</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">GB</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Green Clean Certificate</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Intertek</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">ROHS</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">SGS</label>
+              </div>
+            </div>
+            <p
+              class="mt-2 mx-3 text-success d-inline-block text-decoration-underline"
+              href="#"
+            >
+              See All (15)
+            </p>
+            <!-- Supplier Certifications -->
+            <h5 class="text-dark-emphasis mt-4">Supplier Certifications</h5>
+            <input
+              class="w-100 border border-2 mt-2 py-2 px-2 rounded-5"
+              placeholder=" Supplier Certification..."
+              type="text"
+              style="outline: none"
+            />
+            <div class="mt-4">
+              <div class="d-flex align-items-center px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">DUNS</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">DRS</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">GMP</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">ISO 13485</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">ISO 9001</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">ISO 9001:2015</label>
+              </div>
+            </div>
+            <!-- Manufacturer Location -->
+            <h5 class="text-dark-emphasis mt-4">Manufacturer Location</h5>
+            <input
+              class="w-100 border border-2 mt-2 py-2 px-2 rounded-5"
+              placeholder="Country/Region"
+              type="text"
+              style="outline: none"
+            />
+            <div class="mt-4" style="height: 20vh; overflow-y: scroll">
+              <div class="d-flex align-items-center px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Australia</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Canada</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">China</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Hong Kong S.A.R</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">India</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Korea, Republic of</label>
+              </div>
+              <div class="d-flex align-items-center px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">United Kingdom</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">United States</label>
+              </div>
+              <div class="d-flex px-3">
+                <input type="checkbox" name="" id="" />
+                <label class="ps-2">Vitenam</label>
+              </div>
+            </div>
+            <p
+              class="mt-2 mx-3 text-success d-inline-block text-decoration-underline"
+              href="#"
+            >
+              See All (9)
+            </p>
+            <!-- Stock Availability -->
+            <h5 class="text-dark-emphasis mt-4">Stock Availability</h5>
+            <div class="d-flex px-3">
+              <input type="checkbox" name="" id="" />
+              <img
+                class="ms-3"
+                src="images/usa.cbfe8d83.svg"
+                width="20px"
+                alt=""
+              />
+              <label class="ps-2">In USA</label>
+            </div>
+          </div>
+        </div>
+        <!-- Orders and cards section -->
+        <div class="col-xl-9 col-12">
+          <div class="d-flex justify-content-between mt-1 py-2">
+            <p class="text-center px-2 py-3 fw-bold fs-5 text-muted">Buy</p>
+            <div class="bannerBg text-center p-3 rounded-3">
+              <p class="mb-0 text-white fs-5">
+                Placing bulk orders on BuyHive is safe & easy.
+              </p>
+              <a class="text-decoration-none fw-bold fs-5 text-white" href="#"
+                >Click on learn how it works!</a
+              >
+            </div>
+          </div>
+          <!-- Relevence -->
+          <div class="mt-1 d-flex justify-content-between">
+            <div class="p-2">
+              <img src="images/grid-3x2-gap-fill.svg" width="30px" alt="" />
+              <img
+                class="ms-4"
+                src="images/grid-1x2-fill.svg"
+                width="20px"
+                alt=""
+              />
+            </div>
+            <div class="d-flex align-items-center">
+              <div
+                style="background-color: #f2f2f2 !important"
+                class="mx-1 px-4 py-1 fs-5 border rounded-pill"
+              >
+                <select id="Relevance">
+                  <option value="volvo">Relevance</option>
+                  <option value="saab">Latest</option>
+                  <option value="opel">Price low to high</option>
+                  <option value="audi">Price high to low</option>
+                  <option value="audi">MOQ low to high</option>
+                  <option value="audi">MOQ high to low</option>
+                </select>
+              </div>
+              <div
+                style="background-color: #f2f2f2 !important"
+                class="mx-1 px-4 py-1 fs-5 border rounded-pill"
+              >
+                <i class="fa-light fa-greater-than"></i>
+              </div>
+              <div
+                style="background-color: #f2f2f2 !important"
+                class="mx-1 px-4 py-1 fs-5 border rounded-pill"
+              >
+                1
+              </div>
+              <div class="mx-2 fs-5">of 22</div>
+              <div
+                style="background-color: #f2f2f2 !important"
+                class="mx-1 px-4 py-1 fs-5 border rounded-pill"
+              >
+                <i class="fa-light fa-less-than"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Cards -->
+          <div class="row">
+            <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 g-4">
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card1.png"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt=""
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40 / Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card2.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      ARCTICA 3-Layer Washable Face Mask...
+                    </h6>
+                    <p class="card-text">MOQ: 500 pieces</p>
+                    <p class="fw-bold">$ 11.30 / Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card3.png"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei ECO Biodegradable Wipe - 20 count
+                    </h6>
+                    <p class="card-text">MOQ: 96,000 pieces</p>
+                    <p class="fw-bold">$ 0.80 - $ 0.90 / Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card4.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">Rolhei Kid's mask - 50 count box</h6>
+                    <p class="card-text">MOQ:336,000 Pieces</p>
+                    <p class="fw-bold">$ 0.08 - $ 0.11 / Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card5.png"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Daily Long Lasting Antibacterial Mist 500ml
+                    </h6>
+                    <p class="card-text">MOQ:500 Pieces</p>
+                    <p class="fw-bold">$ 76.52 / Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card6.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Beeswax Food Wrap Reusable Storage
+                    </h6>
+                    <p class="card-text">MOQ:1000 Pieces</p>
+                    <p class="fw-bold">$ 3.50 - $ 3.80 / Set</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card7.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Daily Long Lasting Antibacterial Mist 10ml
+                    </h6>
+                    <p class="card-text">MOQ:1000 Pieces</p>
+                    <p class="fw-bold">$ 2.21 / Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card8.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Sustainable Organic and Eco Friendly Sandwich Bags
+                    </h6>
+                    <p class="card-text">MOQ:1000 Pieces</p>
+                    <p class="fw-bold">$ 3.50 - $ 3.80 / Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card9.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      ARCTICA 3-Layer Washable Face Mask...
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card10.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card11.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card12.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card13.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card14.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card15.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card16.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card17.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card18.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card19.png"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card20.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card21.png"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card22.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card23.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0">
+                  <div class="card-body">
+                    <img
+                      src="images/card24.jpg"
+                      style="width: 200px; height: 200px"
+                      class="card-img-top w-100 object-fit-contain img-fluid"
+                      alt="..."
+                    />
+                    <div class="">
+                      <img src="images/usa.cbfe8d83.svg" width="30px" alt="" />
+                      <p class="ps-2 pt-2 d-inline-block small fw-bold">
+                        Stock in USA
+                      </p>
+                    </div>
+                    <h6 class="card-title">
+                      Rolhei 75% Ethanol Wet Wipe - 100 Count
+                    </h6>
+                    <p class="card-text">MOQ: 1512 pieces</p>
+                    <p class="fw-bold">$ 1.40/ Piece</p>
+                    <button
+                      type="submit"
+                      class="btnCard btn btn-info text-white w-100"
+                    >
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div
+      class="container-fluid px-5 mt-5"
+      style="background-color: #f2f2f2; color: #231f20"
+    >
+      <div class="row">
+        <div class="col-lg-4">
+          <img
+            src="images/buyhive-logo.png"
+            width="180px"
+            height="60px"
+            class="my-4"
+            alt=""
+          />
+          <p class="fs-6" style="color: #686566">
+            Connecting buyers and manufacturers using the world's best sourcing
+            experts & technology built by buyers, for buyers.
+          </p>
+          <h3 class="mt-3">Sign Up to Our Newsletter</h3>
+          <form>
+            <div class="form-group">
+              <label class="mb-1" for="email"
+                >Email <span style="color: red">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control rounded-pill bg-light border-0"
+                id="email"
+                placeholder="Search..."
+                style="outline: 0.5px solid grey; height: 40px"
+              />
+              <br />
+              <button
+                type="button"
+                class="btn rounded-4 text-white w-25 mb-5 fw-bold"
+                style="background-color: #39b7c9; height: 40px"
+              >
+                Submit
+              </button>
+              <br />
+              <h4 class="me-4" style="display: inline-block">Follow us :</h4>
+              <div
+                style="background-color: #f2f2f2 !important"
+                class="mx-1 px-4 py-1 fs-5 border rounded-circle d-inline-block"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div
+                style="background-color: #f2f2f2 !important"
+                class="mx-1 px-4 py-1 fs-5 border rounded-circle d-inline-block"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- About Us -->
+        <div class="col-lg-2">
+          <h4 class="mt-4">About Us</h4>
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Our Story</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >How to Buy</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Our Partners</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Contact us</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Careers</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Terms of use</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Private Policy</a
+          >
+          <p class="mt-5 mb-3 fs-5">We accept</p>
+          <div>
+            <img src="images/download (1).png" alt="" />
+            <img src="images/download.png" alt="" />
+            <img src="images/download (2).png" alt="" />
+          </div>
+        </div>
+        <!-- Our Services -->
+        <div class="col-lg-2">
+          <h4 class="mt-4">Our Services</h4>
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Expert Sourcing</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Contract Manufacturing</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Buy</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Financing</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Careers</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Terms of use</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Private Policy</a
+          >
+        </div>
+        <!-- Account -->
+        <div class="col-lg-2">
+          <h4 class="my-4">About Us</h4>
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Sign In</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Register to Buy</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >My Profile</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >My Orders</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Register to Sell</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Terms of use</a
+          >
+          <a
+            class="d-block text-decoration-none fs-6 my-2"
+            style="color: #686566"
+            href="#"
+            >Become a Sourcing Expert</a
+          >
+        </div>
+        <!-- Our Locations -->
+        <div class="col-lg-2">
+          <h4 class="mt-4">Our Locations</h4>
+          <p class="fs-6 mt-4 my-3" style="color: #686566">BuyHive Limited</p>
+          <p class="fs-6 my-3" style="color: #686566">
+            Dragon Industrial Bldg. Unit 8B, 93 King Lam St. Cheung Sha Wan,
+            Kowloon, Hong Kong
+          </p>
+          <p class="fs-6 mt-4 my-3" style="color: #686566">BuyHive USA Inc.</p>
+          <p class="fs-6 mt-4 my-3" style="color: #686566">
+            4730 South Fort Apache Rd. Suite 300 <br />
+            Las Vegas, NV 89147 <br />
+            USA
+          </p>
+        </div>
+      </div>
+      <!-- Footer 2 -->
+      <span class="mt-5"><hr /></span>
+      <div class="d-flex justify-content-between py-4">
+        <div class="d-inline-block">
+          <span class="mb-2 md:mb-0"> © 2023 BuyHive Limited All Rights </span>
+        </div>
+        <div>
+          <div class="d-inline-block mx-5">Terms of use</div>
+          <div class="d-inline-block">privacy policy</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

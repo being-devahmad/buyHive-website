@@ -1,0 +1,38 @@
+.navbar {
+  background-color: white !important;
+}
+button:hover {
+  color: black !important;
+  border: none;
+}
+.searchBox {
+  background-color: #f2f2f2 !important;
+}
+.bannerBg {
+  background-image: url("images/widgetBackground.27e78f0c.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+select {
+  background-color: #f2f2f2 !important;
+  outline: none !important;
+  border: none !important;
+}
+.card {
+  height: 61vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.btnCard {
+  display: none !important;
+}
+.card:hover .btnCard {
+  display: block !important;
+}
